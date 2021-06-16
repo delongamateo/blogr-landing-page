@@ -1,1 +1,1 @@
-# blogr-landing-page
+I coded this landing page as a practice for layout, animation and responsive skills.

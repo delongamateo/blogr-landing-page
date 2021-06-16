@@ -1,0 +1,43 @@
+.footer {
+  background-color: hsl(240, 10%, 16%);
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5em;
+  padding-bottom: 5em;
+  padding-top: 5em;
+  border-top-right-radius: 5em;
+
+  img {
+    height: 2em;
+    width: 5em;
+  }
+
+  ul {
+    color: white;
+
+    .list_title {
+      margin-bottom: 1em;
+    }
+
+    li {
+      list-style: none;
+      margin-bottom: 0.5em;
+    }
+  }
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+    padding-left: 2em;
+
+    img {
+      margin-bottom: 2em;
+    }
+
+    ul {
+      .list_title {
+        margin-top: 1em;
+      }
+    }
+        
+  }
+}

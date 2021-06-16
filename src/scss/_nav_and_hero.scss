@@ -1,0 +1,173 @@
+.nav_and_hero {
+    background-image: url(../img/bg-pattern-intro.svg);
+    background-position: center;
+    background-color: rgba(255, 102, 99, 0.8);
+    background-size: fill;
+    display: flex;
+    flex-direction: column;
+    height: 40em;
+    border-bottom-left-radius: 5em;
+
+    .navbar {
+        display: flex;
+        margin-top: 2em;
+        
+
+        .hamburger {
+            display: none;
+        }
+        
+        
+        
+        .logo_div {
+            width: 20%;
+            display: flex;
+            justify-content: flex-end;
+
+            .logo {
+                
+                height: 2em;
+                width: 5em;
+            }
+        }
+
+        .menu {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 80%;
+            padding-left: 2em;
+            padding-right: 5em;
+
+
+
+            .nav_links {
+                display: flex;
+                
+
+                .nav_links_li {
+                    list-style: none;
+                    color: white;
+                    margin-left: 3em;
+
+                    .menu-links {
+                        display: none;
+
+                        
+                    }
+
+                    .menu_links_hover {
+                        position: absolute;
+                        background-color: white;
+                        border-radius: 0.5em;
+                        box-shadow: 4px 4px 20px rgba(0,0,0,0.3);
+                        color: black;
+                        margin-top: 1em;
+                        width: 7em;
+                        padding: 1em;
+
+
+                        ul {
+                            
+                            li {
+                                list-style: none;
+                                margin-bottom: 0.5em;
+                                
+                            }
+                        }
+                    }
+                }
+                
+                
+            }
+
+            .buttons_nav {
+                .button_hero {
+                    border: none;
+                    height: 3em;
+                    width: 7em;
+                    border-radius: 2em;
+                    background-color: transparent;
+                    color: white;
+
+                    &:hover {
+                        background-color: white;
+                        color: rgba(255, 102, 99, 0.8);
+                        
+                    }
+                }
+            }
+        }
+    }
+
+    .hero {
+        text-align: center;
+        padding-top: 5em;
+
+        .title {
+            color: white;
+            font-size: 3.5em;
+
+        }
+
+        .title_2 {
+            margin-top: 1em;
+            color: white;
+        }
+
+        .hero_buttons {
+
+            .button_hero {
+                        border: none;
+                        height: 3em;
+                        width: 8em;
+                        margin-top: 3em;
+                        margin-left: 1em;
+                        margin-right: 1em;
+                        background-color: transparent;
+                        border: 1px solid white;
+                        border-radius: 2em;
+                        color: white;
+
+                        &:hover {
+                            background-color: white;
+                            border-radius: 2em;
+                            color:rgb(255, 102, 99)
+                        }
+
+                    
+            }
+        }
+    }
+
+      @media (max-width: 800px) {
+          height: 70vh;
+        
+        .navbar {
+            justify-content: space-between;
+            padding: 1em 2.5em;
+
+            .hamburger {
+                display: block;
+            }
+
+            .menu {
+                display: none;
+            }
+        }
+
+        .hero {
+            padding: 5em 2.5em;
+            
+            
+
+            .title {
+                font-size: 2em;
+                
+            }
+        }
+        
+    }
+
+}
